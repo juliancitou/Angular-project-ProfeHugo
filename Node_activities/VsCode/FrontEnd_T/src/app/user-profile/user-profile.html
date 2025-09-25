@@ -1,0 +1,50 @@
+<div class="user-profile-container">
+  <h1>{{ title }}</h1>
+
+  <!-- Mensaje cuando no hay usuarios -->
+  <div *ngIf="userList.length === 0" class="no-users-message">
+    <p>No hay usuarios registrados. Agrega el primer usuario.</p>
+  </div>
+
+  <!-- Botón de mostrar/ocultar lista -->
+  <button
+    class="toggle-btn"
+    (click)="mostrarLista()"
+    [disabled]="userList.length === 0"
+  >
+    {{ usuariosMostrados ? 'Ocultar lista' : 'Ver lista' }}
+  </button>
+
+  <!-- Tabla de usuarios -->
+  <div *ngIf="usuariosMostrados && userList.length > 0" class="user-list-section">
+    <h2>Lista de Usuarios ({{ userList.length }})</h2>
+    
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Email</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let u of userList">
+          <td>{{ u.id }}</td>
+          <td>{{ u.name }}</td>
+          <td>{{ u.age }}</td>
+          <td>{{ u.email }}</td>
+          <td>
+            <button class="delete-btn" (click)="eliminarUsuario(u.id)">
+              Eliminar
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Botón agregar -->
+    <button class="add-btn" (click)="agregarUsuario()">Agregar Usuario</button>
+  </div>
+</div>

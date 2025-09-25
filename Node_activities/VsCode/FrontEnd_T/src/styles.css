@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+/* Fondo difuminado oscuro */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #2e2e2e, #3d3d3d);
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}

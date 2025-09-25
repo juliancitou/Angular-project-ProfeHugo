@@ -1,0 +1,31 @@
+Para la investigacion de Hugo Rene
+TEMA: Angular v18
+
+• ¿Qué es Angular v18 y quién lo desarrolla?
+	Angular es una plataforma de desarrollo, construida sobre TypeScript. 
+	Es un framework basado en componentes para crear aplicaciones web 
+	escalables. Una colección de bibliotecas bien integradas que cubren 
+	una amplia variedad de características, que incluyen enrutamiento, 
+	administración de formularios, comunicación cliente-servidor y más. 
+	Un conjunto de herramientas para desarrolladores que permiten 
+	desarrollar, compilar, probar y actualizar el código fuente de la 
+	aplicación.
+
+• Diferencias principales entre Angular y otros frameworks/librerías (React, Vue).
+
+• Novedades y características de Angular v18: Standalone Components; Signals; Hydration y Server-Side 
+  Rendering (SSR); Mejoras en el CLI ; Compatibilidad con TypeScript 5+ y mejoras de tipado.
+
+• Estructura de un proyecto en Angular 18 : Creación de proyectos con Angular CLI (ng new); Archivos 
+  clave: main.ts (bootstrap de la app); Componentes standalone (con standalone: true); app.config.ts en 
+  lugar de app.module.ts. ; Organización de carpetas (componentes, servicios, assets).
+
+• Conceptos fundamentales: Componentes: unidad básica de Angular; Templates y Data Binding (interpolación, 
+  property binding, event binding, two-way binding); Directivas: *ngIf, *ngFor, directivas personalizadas; Servicios e inyección de dependencias (DI).
+
+• Ruteo y navegación en Angular 18: Definición de rutas sin NgModules (con provideRouter); Lazy loading 
+  de rutas con loadComponent.;Guards y navegación protegida.
+
+• Manejo de datos : Consumo de APIs REST usando HttpClient.; Uso de Signals para manejo de estado reactivo 
+  (ej. contador o carrito de compras).; Integración con RxJS (streaming de datos).; Formularios: template-driven 
+  vs reactive forms.

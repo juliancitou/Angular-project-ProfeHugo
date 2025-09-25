@@ -1,0 +1,82 @@
+/* Contenedor principal */
+.user-profile-container {
+  background: rgba(20, 20, 20, 0.85);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+  border: 2px solid #444;
+}
+
+/* Botones */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Botón general */
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+}
+
+/* Botón de ver lista */
+.toggle-btn {
+  background: #00000085;
+  color: white;
+}
+
+.toggle-btn:hover {
+  background: #c7c9cb;
+}
+
+/* Botón eliminar */
+.delete-btn {
+  background: #e63946;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #b71c1c;
+}
+
+/* Botón agregar */
+.add-btn {
+  background: #029527b4;
+  color: white;
+  font-weight: bold;
+}
+
+.add-btn:hover {
+  background: #04d323;
+}
+
+/* Tabla */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px;
+  border-bottom: 1px solid #555;
+  text-align: center;
+}
+
+.user-table th {
+  background: #2b2b2b;
+  color: #ddd;
+}
+
+.user-table tr:hover {
+  background: #333;
+}
